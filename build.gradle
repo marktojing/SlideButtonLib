@@ -5,16 +5,35 @@ buildscript {
     repositories {
         google()
         jcenter()
+        maven{
+            url uri("/Users/sunrain/Downloads")
+        }
         
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.6.1'
-        
+        classpath 'com.sunrain.plugin:rain:1.0.4'
+//
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
 }
+class GreetingPlugin implements Plugin<Project> {
+
+    @Override
+    void apply(Project project) {
+        //新建task hello
+        project.task('hello') {
+            doLast {
+                println 'Hello from the GreetingPlugin'
+            }
+        }
+    }
+}
+//引入插件
+apply plugin: GreetingPlugin
+
 
 allprojects {
     repositories {
