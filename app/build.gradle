@@ -49,8 +49,3 @@ dependencies {
 //    implementation  'com.sunrain.plugin:rain:1.0.1'
 
 }
-//releaseHelper{
-//    setFriApiToken 'xxxxx'
-//    setAppName 'xxxsd'
-//    setChangeLog 'ssdaf'
-//}

@@ -17,7 +17,7 @@ public class  MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 //        MyView myView = new MyView(this);
 //        myView.setExampleString("测试");
-        setContentView(R.layout.sample_my_view);
+        setContentView(R.layout.activity_main);
 
 
     }

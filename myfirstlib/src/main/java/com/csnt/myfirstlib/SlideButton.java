@@ -18,10 +18,6 @@ import androidx.annotation.RequiresApi;
  */
 
 
-/**
- * Created by Administrator on 2018/5/14/014.
- */
-
 public class SlideButton extends View {
 
 
